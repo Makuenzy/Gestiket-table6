@@ -1,6 +1,14 @@
 .div1{
-    border: solid black 3px;
+    border: solid 2px;
+    border-color: blue;
     height: 600px;
-    width: 600px;
+    width: 500px;
     position: center;
+}
+.div2{
+    border: solid 2px;
+    border-color: rgb(136, 255, 0);
+    height: 50px;
+    width: 500px;
+    position: relative;
 }
