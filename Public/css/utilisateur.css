@@ -1,0 +1,49 @@
+.div1{
+    border: solid black 3px;
+    border-radius: 7px;
+     width: 700px;
+    height: 600px;
+   
+    margin-bottom: 10%; 
+   
+}
+.div2{
+   position: relative;
+    background-color: #147678;
+   height: 80px;
+   border-radius: 4px;
+}
+#form{
+    margin-top: 2%; 
+    margin-bottom:10%;
+ }
+ input[type=text] {
+     width: 40%;
+     padding: 12px 20px;
+     margin: 8px 0;
+     border-radius: 7px;
+     border: solid black 2px;
+   }
+   
+  button{
+      background-color: #147678;
+      border-radius: 11px;
+      color: white;
+      height: 30px;
+      border: solid black 1px;
+}
+
+img{
+    height: 90px;
+    position: relative;
+    top: -550px;
+    margin-right: 100%;
+
+}
+.div2 a{
+    color: white;
+    text-decoration: none;
+    font-size: 200%;
+    margin: 60px;
+  
+}
