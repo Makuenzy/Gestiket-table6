@@ -16,13 +16,21 @@
           </H1>
           
     </div>  
-<form id="form" action="/action_page.php">
+    <?php 
+        if(isset($_GET['erreur'])){
+             echo $_GET['erreur'];
+
+         }
+         
+?>
+ <form action="connexion1.php" method="post">
       LOGIN:
-      <input style="margin-left:58px;" type="text" name="LOGIN" value=""><br>
+      <input style="margin-left:58px;" type="text" name="login" id=""><br>
       MOT DE PASSE:
-  <input type="text" name="MOT DE PASSE" value=""><br><br>
-     <button style= "float: left; margin-left: 90px; width: 80px;" >Annuler</button>
-      <button style= "float: right; margin-right: 90px; width: 80px;">Valider</button>
+  <input type="text" name="password" id=""><br><br>
+     
+      <input style= "float: left; margin-left: 90px; width: 80px;" type="reset" name="" id="">
+      <input style= "float: left; margin-left: 90px; width: 80px;" type="submit" name="" id="">
     </form>
     <h2>Coding for better Life</h2>
     <img src="../Public/img/logo.jpg" alt="logo">

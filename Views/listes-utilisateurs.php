@@ -11,44 +11,44 @@
         <center><div class="div1"> 
                         <div class="div2">
                                 <div  class="div2">               
-                                        <a href="#">Utilisateurs</a>
-                                        <a href="#">Sessions</a>                                    
+                                        <a href="listes-utilisateurs.php">Utilisateurs</a>
+                                        <a href="listes-sessions.php">Sessions</a>                                    
                                         </div>
+                                        <button><a href="page-utilisateur.php">NOUVEAU</a></button>
                         </div>
-                        <button> Nouveau </button>  
-                        <h3>Liste des Utilisateurs</h3>  
-                        <table style="width:80%">
-                            <tr>
-                                <th>Nom</th>
-                                <th>Prénom</th>
-                                <th>Profil</th>
-                            </tr>
-                            <tr>
-                                <td>SARR</td>
-                                <td>René</td>
-                                <td>AD</td>
-                            </tr>
-                            <tr>
-                                <td> DRAME</td>
-                                <td>Oumar</td>
-                                <td>AD</td>
-                            </tr>
-                            <tr>
-                                <td>DOUMBIA</td>
-                                <td>Fatou</td>
-                                <td>AD</td>
-                            </tr>
-                            <tr>
-                                <td>SYLLA</td>
-                                <td>Fanny</td>
-                                <td>AD</td>
-                            </tr>
-                            <tr>
-                                    <td>WANE</td>
-                                    <td>Mr</td>
-                                    <td>AD</td>
-                                </tr>
-                        </table>
+                        <?php
+     include_once('db_connect.php');
+           $query = $pdo->query("SELECT * FROM `user` ");
+           $users= $query->fetchAll();
+          // var_dump($users) ;
+
+         ?>
+
+
+         <table border="1">
+                <thead>
+                <tr>
+                     <th>Nom</th>
+                     <th>Prenom</th>
+                     <th>Login</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php 
+                    foreach ($users as $key => $user) {
+                   
+                ?>
+                    <tr>
+                       <td><?php echo $user['nom'];?></td>
+                       <td><?php echo $user['prenom'];?></td>
+                       <td><?php echo $user['login'];?></td>
+                    </tr>
+                <?php
+                     
+                    }
+                 ?>
+                </tbody>
+         </table>
                     <h2>Coding for better Life</h2>
                     <img src="../Public/img/logo.jpg" alt="logo">
     </div></center>
