@@ -12,7 +12,7 @@ if (isset ($_POST['valider'])){
 
             }
 
-            header("Location: listes-sessions.php");
+            header("Location: ../Views/listes-sessions.php");
              
 
           

@@ -21,7 +21,7 @@
                 <h1>Nouvel Utilisateur</h1>
                 </div>
 
-                <form action="nouveluser.php" method="post">
+                <form action="../controleurs/nouveluser.php" method="post">
                   NOM:
                 <input required style="margin-left:200px; margin-bottom: 15px;" type="text" name="nom" value=""><br>
                   PRÈNOM:

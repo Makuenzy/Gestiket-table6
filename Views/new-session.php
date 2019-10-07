@@ -29,7 +29,7 @@
 
                
 
-                <form action="controllersession.php" method="post">
+                <form action="../controleurs/controllersession.php" method="post">
                   NOM:
                 <input required style="margin-left:200px; margin-bottom: 10px;" type="text" name="nom" value=""><br>
                   ANNEÉ:

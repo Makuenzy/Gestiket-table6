@@ -11,10 +11,10 @@ if (isset ($_POST['valider'])){
 
                 if ($password != $confirmer) {
 
-                    header("location: page-utilisateur.php");
+                    header("location: ../Views/page-utilisateur.php");
                 }else {
                     $bdd->exec("INSERT INTO user (`ID`, `nom`, `prenom`, `login`, `password`, `profil`) VALUES (NULL, '$nom', '$prenom', '$login', '$password', '$profil')");
-                    header("location: listes-utilisateurs.php");
+                    header("location: ../Views/listes-utilisateurs.php");
                 }
                
             }

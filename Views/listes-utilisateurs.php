@@ -21,7 +21,7 @@
                                         <button><a href="page-utilisateur.php">NOUVEAU</a></button>
                         </div>
                         <?php
-     include_once('db_connect.php');
+     include_once('../controleurs/db_connect.php');
            $query = $bdd->query("SELECT * FROM `user` ");
            $users= $query->fetchAll();
           // var_dump($users) ;
