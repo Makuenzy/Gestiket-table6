@@ -23,17 +23,15 @@
 
                 <form action="nouveluser.php" method="post">
                   NOM:
-                <input required style="margin-left:200px; margin-bottom: 15px;" type="text" name="nom" value=""><br>
+                <input style="margin-left:200px; margin-bottom: 15px;" type="text" name="nom" value=""><br>
                   PRÈNOM:
-              <input required style="margin-left:165px; margin-bottom: -4px;" type="text" name="prenom" value=""><br><br>
+              <input style="margin-left:165px; margin-bottom: -4px;" type="text" name="prenom" value=""><br><br>
               PROFILS:
-              <input required style="margin-left:165px; margin-bottom: -4px;" type="text" name="profil" value=""><br><br>
+              <input style="margin-left:165px; margin-bottom: -4px;" type="text" name="profil" value=""><br><br>
               LOGIN:
-              <input required style="margin-left:185px; margin-bottom: -4px;"type="text" name="login" value=""><br><br>
+              <input style="margin-left:185px; margin-bottom: -4px;"type="text" name="login" value=""><br><br>
               MOT DE PASSE:
-            <input required style="margin-left:110px; margin-bottom: -4px;" type="password" name="password" value=""><br><br>
-             CONFIRMER MOT DE PASSE:
-            <input required style="margin-left:110px; margin-bottom: -4px;" type="password" name="confirmer" value=""><br><br>
+            <input style="margin-left:110px; margin-bottom: -4px;" type="text" name="password" value=""><br><br>
               
                   <input type="reset" name="" id="">
                   <input type="submit" name="valider" id="">

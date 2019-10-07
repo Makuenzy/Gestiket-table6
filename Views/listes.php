@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../Public/css/liste-utilisateurs.css">
-    <title>listes-utilisateurs</title>
+    <link rel="stylesheet" href="../Public/css/listes.css">
+    <title>listes</title>
 </head>
 <body>
 <header>
@@ -15,16 +15,17 @@
 
   </header> 
    <center><div class="div1"> 
-                        <div class="div2">
+                        
                                 <div  class="div2">               
-                                <h1>Liste Utilisateurs</h1>        
+                                      
                                         <button><a href="page-utilisateur.php">NOUVEAU</a></button>
                         </div>
                         <?php
      include_once('db_connect.php');
-           $query = $pdo->query("SELECT * FROM `user` ");
-           $users= $query->fetchAll();
-          // var_dump($users) ;
+           $query = $pdo->query("SELECT * FROM `liste` ");
+          
+           $listes= $query->fetchAll();
+          // var_dump($listes) ;
 
          ?>
 
@@ -32,20 +33,20 @@
          <table border="1">
                 <thead>
                 <tr>
-                     <th>Nom</th>
-                     <th>Prenom</th>
-                     <th>Login</th>
+                     <th>Session</th>
+                     <th>Referentiels</th>
+                     <th>Effectif</th>
                 </tr>
                 </thead>
                 <tbody>
                 <?php 
-                    foreach ($users as $key => $user) {
+                    foreach ($listes as $key => $liste) {
                    
                 ?>
                     <tr>
-                       <td><?php echo $user['nom'];?></td>
-                       <td><?php echo $user['prenom'];?></td>
-                       <td><?php echo $user['login'];?></td>
+                       <td><?php echo $user['session'];?></td>
+                       <td><?php echo $user['referentiels'];?></td>
+                       <td><?php echo $user['effectif'];?></td>
                     </tr>
                 <?php
                      
