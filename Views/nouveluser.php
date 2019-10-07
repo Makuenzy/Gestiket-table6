@@ -1,16 +1,5 @@
 <?php
-
-/* Connexion à une base ODBC avec l'invocation de pilote */
-$bdd = 'mysql:dbname=ticket;host=localhost';
-$user = 'PCRS';
-$password = 'Pcrs15981993*';
-
-  
-try {
-    $bdd = new PDO($bdd, $user, $password);
-} catch (PDOException $e) {
-    echo 'Connexion échouée : ' . $e->getMessage();
-}
+require_once('db_connect.php');
 
 if (isset ($_POST['valider'])){
                 $nom=$_POST['nom'];
@@ -18,9 +7,18 @@ if (isset ($_POST['valider'])){
                 $login=$_POST['login'];
                 $password=$_POST['password'];
                 $profil=$_POST['profil'];
-                $bdd->exec("INSERT INTO user (`ID`, `nom`, `prenom`, `login`, `password`, `profil`) VALUES (NULL, '$nom', '$prenom', '$login', '$password', '$profil')");
+                $confirmer=$_POST['confirmer']; 
+
+                if ($password != $confirmer) {
+
+                    header("location: page-utilisateur.php");
+                }else {
+                    $bdd->exec("INSERT INTO user (`ID`, `nom`, `prenom`, `login`, `password`, `profil`) VALUES (NULL, '$nom', '$prenom', '$login', '$password', '$profil')");
+                    header("location: listes-utilisateurs.php");
+                }
+               
             }
 
-           header("Location: listes-utilisateurs.php");
+        //   
             
 ?>

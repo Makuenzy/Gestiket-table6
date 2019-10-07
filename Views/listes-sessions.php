@@ -21,7 +21,7 @@
                         </div>
                         <?php
      include_once('db_connect.php');
-           $query = $pdo->query("SELECT * FROM `session` ");
+           $query = $bdd->query("SELECT * FROM `session` ");
            $sessions= $query->fetchAll();
           // var_dump($users) ;
 

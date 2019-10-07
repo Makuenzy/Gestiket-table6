@@ -31,15 +31,15 @@
 
                 <form action="controllersession.php" method="post">
                   NOM:
-                <input style="margin-left:200px; margin-bottom: 10px;" type="text" name="nom" value=""><br>
+                <input required style="margin-left:200px; margin-bottom: 10px;" type="text" name="nom" value=""><br>
                   ANNEÉ:
-              <input style="margin-left:180px; margin-bottom: -7px;" type="text" name="annee" value=""><br><br>
+              <input required style="margin-left:180px; margin-bottom: -7px;" type="text" name="annee" value=""><br><br>
               DATE DÉBUT:
-              <input style="margin-left:130px; margin-bottom: -7px;" type="text" name="datedebut" value=""><br><br>
+              <input required style="margin-left:130px; margin-bottom: -7px;" type="text" name="datedebut" value=""><br><br>
               DATE FIN:
-              <input style="margin-left:160px; margin-bottom: -10px;"type="text" name="datefin" value=""><br><br>
+              <input required style="margin-left:160px; margin-bottom: -10px;"type="text" name="datefin" value=""><br><br>
               EFFECTIF:
-            <input style="margin-left:155px; margin-bottom: -7px;" type="text" name="effectif" value=""><br><br>
+            <input required style="margin-left:155px; margin-bottom: -7px;" type="text" name="effectif" value=""><br><br>
               
                   <input type="reset" name="" id="">
                   <input type="submit" name="valider" id="">

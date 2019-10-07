@@ -22,7 +22,7 @@
                         </div>
                         <?php
      include_once('db_connect.php');
-           $query = $pdo->query("SELECT * FROM `user` ");
+           $query = $bdd->query("SELECT * FROM `user` ");
            $users= $query->fetchAll();
           // var_dump($users) ;
 
