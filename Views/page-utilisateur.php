@@ -17,13 +17,24 @@
                 <a href="listes-sessions.php">Sessions</a>
             
                 </div>
+
+
+                
                 
 
                 
 
                 <h1>Nouvel Utilisateur</h1>
 
-                <form action="nouveluser.php" method="post">
+                <form action="controluser.php" method="POST">
+                  <div>
+                    <?php 
+                      if(isset($_GET['erreur'])){
+                        echo $_GET['erreur'];
+
+                      }
+                    ?>
+                  </div>
                   NOM:
                 <input style="margin-left:28px; margin-bottom: 15px;" type="text" name="nom" value=""><br>
                   PRÈNOM:
@@ -33,10 +44,12 @@
               LOGIN:
               <input style="margin-left:22px; margin-bottom: -4px;"type="text" name="login" value=""><br><br>
               MOT DE PASSE:
-            <input style="margin-right:35px; margin-bottom: -4px;" type="text" name="password" value=""><br><br>
+            <input style="margin-right:35px; margin-bottom: -4px;" type="password" name="password" value=""><br><br>
+            CONFIRMER PWD:
+            <input style="margin-right:35px; margin-bottom: -4px;" type="password" name="confirmer" value=""><br><br>
               
                   <input type="reset" name="" id="">
-                  <input type="submit" name="valider" id="">
+                  <input type="submit" name="" id="">
                 </form>
                 <img src="../Public/img/logo.jpg" alt="logo">
                 </center></div>
