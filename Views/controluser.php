@@ -2,6 +2,8 @@
 
 //1-Recupération des Infos provenant du formulaire
  //2-validation des données
+var_dump(($_POST));
+
 if(!empty($_POST['nom']) and !empty($_POST['prenom']) and !empty($_POST['profil']) and !empty($_POST['login']) and !empty($_POST['password']) and !empty($_POST['confirmer'])){
     if($_POST['password'] != $_POST['confirmer']){
 
@@ -25,5 +27,6 @@ if(!empty($_POST['nom']) and !empty($_POST['prenom']) and !empty($_POST['pro
 }else{
     header("Location: page-utilisateur.php?erreur= Remplissez tous les champs");  
 }
+*/
 
 ?>

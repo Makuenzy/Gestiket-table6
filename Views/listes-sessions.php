@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../Public/css/liste-utilisateurs.css">
-    <title>listes-utilisateurs</title>
+    <link rel="stylesheet" href="../Public/css/listes-sessions.css">
+    <title>listes-sessions</title>
 </head>
 <body>
-        <center><div class="div1"> 
+<header>
+    <div>
+  <a href="listes-utilisateurs.php">Utilisateurs</a>
+  <a href="listes-sessions.php">Sessions</a>
+
+  </header>    
+<center><div class="div1"> 
                         <div class="div2">
-                                <div  class="div2">               
-                                        <a href="listes-utilisateurs.php">Utilisateurs</a>
-                                        <a href="listes-sessions.php">Sessions</a>                                    
-                                        </div>
+                        <h1>Liste Sessions</h1>      
                                         <button><a href="new-session.php">NOUVEAU</a></button>
                         </div>
                         <?php
-     include_once('db_connect.php');
-           $query = $pdo->query("SELECT * FROM `session` ");
+     include_once('../controleurs/db_connect.php');
+           $query = $bdd->query("SELECT * FROM `session` ");
            $sessions= $query->fetchAll();
           // var_dump($users) ;
 
@@ -56,5 +59,7 @@
                     <h2>Coding for better Life</h2>
                     <img src="../Public/img/logo.jpg" alt="logo">
     </div></center>
+    <img src="../Public/img/logo.jpg" alt="logo"> 
+    </div>
 </body>
 </html>

@@ -1,8 +1,8 @@
 <?php
-   //a)  connexion au SGBD login/Mot de passe Mysql
-        $bdd = 'mysql:dbname=ticket;host=localhost';
-$user = 'PCRS';
-$password = 'Pcrs15981993*';
+/* Connexion à une base ODBC avec l'invocation de pilote */
+$bdd = 'mysql:dbname=ticket;host=localhost';
+$user = 'root';
+$password = 'dd';
 
   
 try {
@@ -10,5 +10,6 @@ try {
 } catch (PDOException $e) {
     echo 'Connexion échouée : ' . $e->getMessage();
 }
+         
 
          ?>
