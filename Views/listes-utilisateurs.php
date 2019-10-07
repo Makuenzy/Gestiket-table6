@@ -8,12 +8,16 @@
     <title>listes-utilisateurs</title>
 </head>
 <body>
-        <center><div class="div1"> 
+<header>
+    <div>
+  <a href="listes-utilisateurs.php">Utilisateurs</a>
+  <a href="listes-sessions.php">Sessions</a>
+
+  </header> 
+   <center><div class="div1"> 
                         <div class="div2">
                                 <div  class="div2">               
-                                        <a href="listes-utilisateurs.php">Utilisateurs</a>
-                                        <a href="listes-sessions.php">Sessions</a>                                    
-                                        </div>
+                                <h1>Liste Utilisateurs</h1>        
                                         <button><a href="page-utilisateur.php">NOUVEAU</a></button>
                         </div>
                         <?php
@@ -50,7 +54,9 @@
                 </tbody>
          </table>
                     <h2>Coding for better Life</h2>
-                    <img src="../Public/img/logo.jpg" alt="logo">
+                    
     </div></center>
+    <img src="../Public/img/logo.jpg" alt="logo">
+    </div>
 </body>
 </html>
