@@ -20,8 +20,13 @@
                                         <button><a href="new-session.php">NOUVEAU</a></button>
                         </div>
                         <?php
+<<<<<<< HEAD
      include_once('../controleurs/db_connect.php');
            $query = $bdd->query("SELECT * FROM `session` ");
+=======
+     include_once('db_connect.php');
+           $query = $pdo->query("SELECT * FROM `session` ");
+>>>>>>> 25a53a98433edae6318b7cf38844852c56369c12
            $sessions= $query->fetchAll();
           // var_dump($users) ;
 
