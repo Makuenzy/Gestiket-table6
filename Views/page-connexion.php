@@ -25,7 +25,7 @@
          }
          
 ?>
- <form action="connexion1.php" method="post">
+ <form action="../controleurs/connexion1.php" method="post">
       LOGIN:
       <input style="margin-left:95px;" type="text" name="login" id=""><br>
       MOT DE PASSE:

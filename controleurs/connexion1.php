@@ -11,13 +11,13 @@ if(!empty($_POST['login']) and !empty($_POST['password'])  ){
          //d) Recuperer resultat
          $resultat = $query->fetch();
          if(isset($resultat['ID'])){
-            header("Location: listes-utilisateurs.php");  
+            header("Location: ../Views/listes-utilisateurs.php");  
          }else{
-            header("Location: page-connexion.php?erreur=Login ou Mot de passe Incorrect"); 
+            header("Location: ../Views/page-connexion.php?erreur=Login ou Mot de passe Incorrect"); 
          }
 
 }else{
-    header("Location: page-connexion.php?erreur=Login ou Mot de passe Obligatoire");  
+    header("Location: ../Views/page-connexion.php?erreur=Login ou Mot de passe Obligatoire");  
 }
 
 

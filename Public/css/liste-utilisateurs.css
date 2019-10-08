@@ -2,7 +2,6 @@
 body{
     background-color: white;
     margin: 0;
-    border: solid #068689 2px;
 }
 header{
     width: 100%;
@@ -73,7 +72,7 @@ button a{
 img{
     height: 90px;
     position: relative;
-    top: -662px;
+    top: -530px;
     margin-right: 100%;
 }
 
