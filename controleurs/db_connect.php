@@ -2,8 +2,8 @@
    //a)  connexion au SGBD login/Mot de passe Mysql
 <<<<<<< HEAD
         $bdd = 'mysql:dbname=ticket;host=localhost';
-$user = 'PCRS';
-$password = 'Pcrs15981993*';
+$user = 'root';
+$password = 'dd';
 
   
 try {
@@ -16,7 +16,7 @@ try {
          //b) Selectionner BD
          try {
  
-            $pdo = new PDO($dsn, 'root' , 'mami93');
+            $pdo = new PDO($dsn, 'root' , 'dd');
             
             }
             catch (PDOException $exception) {
