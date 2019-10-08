@@ -20,8 +20,23 @@
                                         <button><a href="new-session.php">NOUVEAU</a></button>
                         </div>
                         <?php
+<<<<<<< HEAD
      include_once('../controleurs/db_connect.php');
            $query = $bdd->query("SELECT * FROM `session` ");
+=======
+<<<<<<< HEAD
+     include_once('../controleurs/db_connect.php');
+           $query = $bdd->query("SELECT * FROM `session` ");
+=======
+<<<<<<< HEAD
+     include_once('../controleurs/db_connect.php');
+           $query = $bdd->query("SELECT * FROM `session` ");
+=======
+     include_once('../controleurs/db_connect.php');
+           $query = $pdo->query("SELECT * FROM `session` ");
+>>>>>>> 25a53a98433edae6318b7cf38844852c56369c12
+>>>>>>> 78075201cb9176d11915a37fa43f06c31a8e8f8b
+>>>>>>> d9542553cf8377d5dcdda847a8cc26997b080659
            $sessions= $query->fetchAll();
           // var_dump($users) ;
 
